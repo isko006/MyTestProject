@@ -1,0 +1,9 @@
+version: "3"
+services:
+  test:
+    build:
+      context: .
+    container_name: testt
+    command: python manage.py runsrever 0.0.0.0:8000
+    ports:
+    - 8000:8000  
